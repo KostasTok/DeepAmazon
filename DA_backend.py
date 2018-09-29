@@ -586,6 +586,7 @@ class User_Data():
             self.InstanceTypes = ['p2.xlarge', 'p2.8xlarge',
                                  'p2.16xlarge', 'p3.2xlarge',
                                  'p3.8xlarge', 'p3.16xlarge']
+            self.save()
     
     def save(self):
         with open('resources/user_data.pkl', 'wb') as output:
